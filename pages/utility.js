@@ -37,7 +37,7 @@ useEffect(() => {
                 Los frascos son la gran fuente receptora de liquidos del mundo
               </p>
               <Image
-                src="/wateUUtility.png"
+                src="/waterUtility.png"
                 className="absolute  translate-x-44 origin-bottom -rotate-270 z-0 opacity-1 md:translate-x-0"
                 layout="fill"
                 objectFit="cover"
