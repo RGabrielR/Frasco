@@ -1,6 +1,6 @@
 import React, {useRef, useEffect} from 'react';
 import FlexStructure from "../components/FlexStructure";
-import RightSideStructure from "../components/rightSideStructure";
+import RightSideStructure from "../components/RightSideStructure";
 import RightOptions from "../components/RightOptions";
 import JarFloor from "../components/JarFloor";
 import {gsap} from 'gsap';

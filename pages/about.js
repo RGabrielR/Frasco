@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import Title from "../components/Title";
 import FlexStructure from "../components/FlexStructure";
-import RightSideStructure from "../components/rightSideStructure";
+import RightSideStructure from "../components/RightSideStructure";
 import RightOptions from "../components/RightOptions";
 import {gsap } from "gsap";
 const About = () => {
