@@ -1,0 +1,36 @@
+.embla {
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 20px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #B1D1D3;
+  } 
+
+
+  .embla__slide {
+    position: relative;
+    min-width: 40%;
+    padding-left: 10px;
+  } 
+  
+  .embla__slide__inner {
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
+    width: 35vw;
+  } 
+  
+  .embla__slide__img {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    min-height: 100%;
+    min-width: 50%;
+    max-width: none;
+    transform: translate(-50%, -50%);
+  } 
+ 
