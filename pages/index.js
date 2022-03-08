@@ -26,9 +26,9 @@ export default function Home() {
         </div>
 
        <RightSideStructure classes={"md:mt-6"} ref={rightSide}>
-          <RightOptions src='accesibilityIconFit-01.png' title='Usos' href='Utility' bgBlack={true} newWindow={false}/>
-          <RightOptions  src='typesIconFit-01.png' title='Tipos' href='Types' bgBlack={true} newWindow={false}/>
-          <RightOptions  src='accesibilityIconSlim-01.png' title='Creador' href='About' bgBlack={true} newWindow={false}/>
+          <RightOptions src='accesibilityIconFit-01.png' title='Usos' href='utility' bgBlack={true} newWindow={false}/>
+          <RightOptions  src='typesIconFit-01.png' title='Tipos' href='types' bgBlack={true} newWindow={false}/>
+          <RightOptions  src='accesibilityIconSlim-01.png' title='Creador' href='about' bgBlack={true} newWindow={false}/>
           </RightSideStructure>
       </FlexStructure>
       <div className="-ml-44 -mt-20 hidden md:block md:relative">
