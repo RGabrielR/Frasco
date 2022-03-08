@@ -11,9 +11,10 @@ const About = () => {
   const tl = useRef();
   useEffect(() => {
     tl.current = gsap.timeline()
-    .from(title.current,1, {y: -300, display: 'none'} )
-    .from(leftSide.current, 1, {x: -800, display: 'none'})
-    .from(rightSide.current, 1, {x: 800, display: 'none'}, "-=1")
+    .from(title.current,1, {y: -300,  autoAlpha: 0} )
+    .from(leftSide.current, 1, {x: -800,  autoAlpha: 0})
+    .from(rightSide.current, 1, {x: 800,  autoAlpha: 0}, "-=1")
+    
   }, [])
   return (
     <div className="flex flex-col items-center  md:justify-around h-screen">

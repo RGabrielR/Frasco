@@ -3,7 +3,7 @@ import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
 import { mediaByIndex } from "../media";
 import styles from '../styles/Embla.module.css';
-const CarouselMobileWithoutRef = (props, ref) => {
+const CarouselMobile = () => {
   const SLIDE_COUNT = 6;
   const slides = Array.from(Array(SLIDE_COUNT).keys());
   const [viewportRef, embla] = useEmblaCarousel({
@@ -27,7 +27,7 @@ const CarouselMobileWithoutRef = (props, ref) => {
     onSelect();
   }, [embla, onSelect]);
   return (
-      <div className={styles.embla} ref={ref}>
+      <div className={styles.embla} >
         <div className={styles.embla__viewport} ref={viewportRef}>
           <div className={styles.embla__container}>
             {slides.map((index) => (
@@ -52,5 +52,4 @@ const CarouselMobileWithoutRef = (props, ref) => {
 
   );
 };
-const CarouselMobile = React.forwardRef(CarouselMobileWithoutRef)
 export default CarouselMobile;

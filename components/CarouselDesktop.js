@@ -4,7 +4,7 @@ import { mediaByIndex } from "../media";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";  
 import styles from '../styles/Embla.module.css';
 import desktop from '../styles/EmblaDesktop.module.css';
-const CarouselDesktopWithoutRef = (props, ref) => {
+const CarouselDesktop = () => {
     const SLIDE_COUNT = 6;
     const slides = Array.from(Array(SLIDE_COUNT).keys());
     const [viewportRef, embla] = useEmblaCarousel({
@@ -30,7 +30,7 @@ const CarouselDesktopWithoutRef = (props, ref) => {
     }, [embla, onSelect]);
   
     return (
-      <div className={desktop.embla} ref={ref}>
+      <div className={desktop.embla} >
         <div className={styles.embla__viewport} ref={viewportRef}>
           <div className={styles.embla__container}>
             {slides.map((index) => (
@@ -54,6 +54,6 @@ const CarouselDesktopWithoutRef = (props, ref) => {
       </div>
     );
   };
-const CarouselDesktop = React.forwardRef(CarouselDesktopWithoutRef)
+
  
 export default CarouselDesktop;

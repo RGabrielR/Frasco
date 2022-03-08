@@ -10,7 +10,7 @@ const TitleWithoutRef = ({ title }, ref) => {
           src="/goBackBlack.png"
           layout="fill"
           objectFit="contain"
-          className="absolute left-8 top-1  w-10 z-50 cursor-pointer rounded-lg transition-all duration-500 hover:invert hover:bg-white md:w-14 md:top-0.5"
+          className="absolute  top-1  w-10 z-50 cursor-pointer rounded-lg transition-all duration-500 hover:invert hover:bg-white md:w-14 md:left-8 md:top-0.5"
         />
       </Link>
     </div>
