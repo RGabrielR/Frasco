@@ -3,7 +3,7 @@ import Image from "next/image";
 import Title from '../components/Title';
 import { gsap } from "gsap";
 
-const utility = () => {
+const Utility = () => {
   const tl = useRef();
   const title = useRef();
   const firstColumn = useRef();
@@ -29,7 +29,7 @@ useEffect(() => {
       />
       <div className=" flex flex-col relative z-10  items-center justify-between">
         <Title title={"Utilidad"} ref={title} />
-        <div className="flex flex-col mt-4 min-h-[80vh] w-11/12  justify-between md:flex-row ">
+        <div className="flex flex-col mt-4 min-h-4/5-scr w-11/12  justify-between md:flex-row ">
           
           <div className="relative  md:pl-0 md:w-11/12 md:mr-4" ref={firstColumn}>
             <div className="bg-secondary  rounded-3xl my-3 self-center relative md:min-h-full">
@@ -37,7 +37,7 @@ useEffect(() => {
                 Los frascos son la gran fuente receptora de liquidos del mundo
               </p>
               <Image
-                src="/waterUtility.png"
+                src="/wateUUtility.png"
                 className="absolute  translate-x-44 origin-bottom -rotate-270 z-0 opacity-1 md:translate-x-0"
                 layout="fill"
                 objectFit="cover"
@@ -82,4 +82,4 @@ useEffect(() => {
   );
 };
 
-export default utility;
+export default Utility;

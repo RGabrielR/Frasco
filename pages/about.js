@@ -4,7 +4,7 @@ import FlexStructure from "../components/FlexStructure";
 import RightSideStructure from "../components/rightSideStructure";
 import RightOptions from "../components/RightOptions";
 import {gsap } from "gsap";
-const about = () => {
+const About = () => {
   const leftSide = useRef();
   const rightSide = useRef();
   const title = useRef();
@@ -18,13 +18,13 @@ const about = () => {
   return (
     <div className="flex flex-col items-center  md:justify-around h-screen">
       <Title title={"Creador"} ref={title} />
-      <FlexStructure classes={"md:w-[95%] min-h-[85vh] md:min-h-min"}>
+      <FlexStructure classes={"md:w-95 min-h-6/5-scr md:min-h-min"}>
         <div className=" flex flex-col justify-around self-center items-center h-2/5 md:flex-row " ref={leftSide}>
-          <div className=" flex flex-col bg-primary text-center mt-2 w-11/12 md:h-[70vh] md:mt-0 md:self-center md:justify-around">
+          <div className=" flex flex-col bg-primary text-center mt-2 w-11/12 md:h-2/3-scr md:mt-0 md:self-center md:justify-around">
             <h1 className="text-3xl font-sans my-2 md:text-5xl">
               Gabriel Alabí
             </h1>
-            <p className="text-justify font-sans text-xs w-11/12 pl-4 pr-2 py-2 text-xs md:min-h-[50vh] md:text-2xl md:pt-4 md:max-w-[100vw]">
+            <p className="text-justify font-sans text-xs w-11/12 pl-4 pr-2 py-2 text-xs md:min-h-1/2-scr md:text-2xl md:pt-4 md:max-w-screen">
               desarrollador fullstack MERN - mongo, express, react y node -
               construí esta pagina con el fin de mostrar habilidades en diseño,
               construcción de pagina web y experiencia de usuario. Para ver mas
@@ -68,4 +68,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

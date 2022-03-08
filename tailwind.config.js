@@ -9,7 +9,23 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        '11/12': '91.666667vh'
+        '7/6': '115%',
+        '11/12': '91.666667vh',
+        '4/5-scr': '80vh',
+        '2/3-scr': '70vh'
+      },
+      minHeight: {
+        '6/5-scr': '85vh',
+        '4/5-scr': '80vh',
+        '1/2-scr': '50vh',
+        '2/5-scr': '40vh'
+      },
+      width: {
+        '6/4': '150%',
+        '95': '95%'
+      },
+      maxWidth: {
+        'screen': '100vw'
       },
       colors: {
         primary: '#C8B8CC',
@@ -20,6 +36,9 @@ module.exports = {
       },
       borderRadius: {
         '2xl': '3rem',
+      },
+      translate: {
+        '20px': '20px'
       },
       animation: {
         'float': 'float 5s ease-in-out infinite'
