@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frasco
 
-## Getting Started
+## Intro
+El proyecto busca mostrar habilidades en desarrollo web. Se desarrollo esta pagina con Next.js (framework js de React), GSAP y Tailwind. 
 
-First, run the development server:
+## Maquetación
+Para el desarrollo de este proyecto se realizo una maqueta utilizando Figma. Esta maqueta buscaba tener en claro:
+- el diseño
+- los colores
+- la estructura de la información
+- como iba a verse tanto en celulares como en monitores
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+A partir de ahí se prosiguio en el desarrollo de la web. Esta es la maqueta diseñada:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+[Maquetación  web frasco.pdf](https://github.com/RGabrielR/Frasco/files/8210061/Maquetacion.web.frasco.pdf)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Estructura del codigo
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### CSS principalmente por Tailwind
+Para uniformar lo mas posible el uso de estilos se decide que todos los estilos sean realizados por Tailwind. En aquellos casos donde la librería no presenta un estilo en particular se lo extiende a travez del archivo de Tailwind.config.js. La unica excepción a este principio es en el caso del carrousel: en ese caso se usan los CSS precargados por EMBLA (una librería de carrouseles) para no cambiar la estructura que la librería tiene prestablecida. Los CSS de la librería en particular se las hace modulos y se las importa de esa manera cosa que no afecten otros componentes.
 
-## Learn More
+### Componentes reutilizables
+Se busca ahorrar lo mas posible el uso de codigo repetitivo por lo cual se trato de generar la mayor cantidad de componentes reutilizables posibles. Ciertas paginas tienen mas ciertas paginas tienen menos pero mas que todo se debe a que en ciertos escenarios era mas perjudicial que beneficioso el desarrollo de componentes puesto terminaba mas engorroso.
 
-To learn more about Next.js, take a look at the following resources:
+## vista
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Vista que se obtiene en la pc
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+https://user-images.githubusercontent.com/63560574/157350693-a866a3f2-7b3f-44dc-a808-dea25ca9af09.mp4
 
-## Deploy on Vercel
+Vista que se obtiene en celulares
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://user-images.githubusercontent.com/63560574/157350697-c3d2c8d9-ba90-43f6-b566-f83c897c84e1.mp4
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
